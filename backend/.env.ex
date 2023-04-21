@@ -1,0 +1,21 @@
+APPLICATION_NAME=served_fastapi
+
+# DB :Postgresql:
+POSTGRES_USER=DB_USER
+POSTGRES_PASSWORD=DB_PASSWORD
+POSTGRES_DB=DB_DB
+POSTGRES_HOST=db
+POSTGRES_PORT=5432
+
+# Nginx
+NGINX_EXPOSE=80
+
+# WAS GI
+WASGI_WORKERS=4
+
+# For development
+PGADMIN_DEFAULT_EMAIL=email@example.net
+PGADMIN_DEFAULT_PASSWORD=password
+
+# For Application
+SECRET_KEY=salambartoueyzibayeman
