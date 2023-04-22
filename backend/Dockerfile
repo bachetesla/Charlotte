@@ -11,9 +11,9 @@ ENV PYTHONUNBUFFERED 1
 # copy project
 COPY . .
 
-RUN apt-get update \
-    && apt-get install -y gcc python3-dev musl-dev netcat
+RUN apt-get update
+RUN apt-get install -y gcc python3-dev musl-dev netcat
 
-RUN pip install --upgrade pip && pip install  -r _prod/requirements.txt
+RUN pip install --upgrade pip && pip install  -r requirements.txt
 
-ENTRYPOINT ["_prod/entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]

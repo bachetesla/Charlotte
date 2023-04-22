@@ -1,6 +1,16 @@
-APPLICATION_NAME=served_fastapi
+# Application
+APP_NAME="trt"
+
+
+
+# Django
+DJANGO_SECRET_KEY="DJANGO_SECRET"
+DJANGO_DEBUG_MODE=1
+DJANGO_ALLOWED_HOST="*"
+DJANGO_ALLOWED_CSRF="https://*.0.0.0.0"
 
 # DB :Postgresql:
+DB=postgres
 POSTGRES_USER=DB_USER
 POSTGRES_PASSWORD=DB_PASSWORD
 POSTGRES_DB=DB_DB
@@ -9,13 +19,10 @@ POSTGRES_PORT=5432
 
 # Nginx
 NGINX_EXPOSE=80
+NGINX_EXPOSE_SSL=443
 
-# WAS GI
-WASGI_WORKERS=4
+# Backup
+GOOGLE_APPLICATION_CREDENTIALS_PATH="/etc/trt/google-application-credentials.json"
 
-# For development
-PGADMIN_DEFAULT_EMAIL=email@example.net
-PGADMIN_DEFAULT_PASSWORD=password
-
-# For Application
-SECRET_KEY=salambartoueyzibayeman
+# Redis cache
+REDIS_PORT=6379

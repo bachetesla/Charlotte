@@ -1,12 +1,17 @@
-# Base
-fastapi[all]
-uvicorn[standard]
+django>=4.0.0
 python-dotenv
 psycopg2-binary
-pydantic
-sqlalchemy
-alembic
-
-# Authentication
-python-jose[cryptography]
-passlib[bcrypt]
+gunicorn
+pytest-django
+pillow
+django-taggit
+django-jalali-date
+requests
+pydrive
+redis
+hiredis
+django-rosetta
+django-parler
+djangorestframework
+markdown
+django-filter
