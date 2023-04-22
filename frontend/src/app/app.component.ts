@@ -19,8 +19,10 @@ export class AppComponent {
 
 
   ngOnInit() {
-    this.http.get("http://localhost:8000").pipe(tap({
-      next: (data:any) => this.data.message = data.message,
+    this.http.get("http://0.0.0.0:8000/api/users/users/1", {headers: {
+      "Authorization": "Basic cmlicmVhOkdvb2dvb2wwQA=="
+      }}).pipe(tap({
+      next: (data:any) => this.data.message = data.username,
       error: (data:any) => this.data.message = "Connection failed",
     })).subscribe()
 
